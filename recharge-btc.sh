@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 AUTH="-rpcuser=btcrpc -rpcpassword=123456 -rpcport=8431 -regtest"
 bitcoin-cli $AUTH listaccounts
-bitcoin-cli $AUTH generate 200
+bitcoin-cli $AUTH generate 110
 
 bitcoin-cli $AUTH importprivkey "cVVGgzVgcc5S3owCskoneK8R1BNGkBveiEcGDaxu8RRDvFcaQaSG" "Account1" false
 bitcoin-cli $AUTH importprivkey "cRGkipHiYFRSAgdY9NjUT7egHTuNXoKYWQea3kWVbkSJAs4VDi8r" "Account2" false
