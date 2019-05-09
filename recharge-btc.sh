@@ -19,13 +19,13 @@ bitcoin-cli $AUTH setaccount "mnk2URqujBqMEfhALMby1WZHoBRauW37Kg" "Account5"
 
 bitcoin-cli $AUTH sendmany "" '{"mnJQyeDFmGjNoxyxKQC6MMFdpx77rYV3Bo":123.12345,"mzdF3oEx8mKrpGb5rVnTE7MhQfL8N8oSnW":25.4112}'
 bitcoin-cli $AUTH sendmany "" '{"mtdVMhiWWmegkkBhzYDrz84yfgofPNLNmb":62.4322,"mqNnZTyFxhB6EzF1iDEAp9enrT84fwd1X5":31.2345}'
-bitcoin-cli $AUTH sendmany "" '{"mnk2URqujBqMEfhALMby1WZHoBRauW37Kg":14.1337}'
+bitcoin-cli $AUTH sendmany "" '{"mnk2URqujBqMEfhALMby1WZHoBRauW37Kg":1}'
 
 bitcoin-cli $AUTH $AUTH generate 3
 
 bitcoin-cli $AUTH sendmany "Account2" '{"mnJQyeDFmGjNoxyxKQC6MMFdpx77rYV3Bo":1.1337,"mqNnZTyFxhB6EzF1iDEAp9enrT84fwd1X5":4.123, "mzdF3oEx8mKrpGb5rVnTE7MhQfL8N8oSnW":6.324}'
 bitcoin-cli $AUTH sendmany "Account3" '{"mqNnZTyFxhB6EzF1iDEAp9enrT84fwd1X5":2.1337,"mzdF3oEx8mKrpGb5rVnTE7MhQfL8N8oSnW":6.123, "mtdVMhiWWmegkkBhzYDrz84yfgofPNLNmb": 7.34}'
-bitcoin-cli $AUTH sendmany "Account4" '{"mnJQyeDFmGjNoxyxKQC6MMFdpx77rYV3Bo":7.1337,"mnk2URqujBqMEfhALMby1WZHoBRauW37Kg":1.123}'
+bitcoin-cli $AUTH sendmany "Account4" '{"mnJQyeDFmGjNoxyxKQC6MMFdpx77rYV3Bo":7.1337}'
 
 bitcoin-cli $AUTH $AUTH generate 1
 

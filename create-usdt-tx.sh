@@ -25,7 +25,7 @@ dust_value=0.00000546
 bitcoin_amount=0.1
 
 # change bitcoin amount
-change_amount=0.0999
+change_amount=0.099
 
 # prepare tx bitcoin fee for new coin tx
 pre_transaction=`omnicore-cli $AUTH sendtoaddress $sender_address $bitcoin_amount`
