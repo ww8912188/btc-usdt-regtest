@@ -21,3 +21,5 @@ sleep 5
 # send usdt demo
 sleep 5
 ./create-usdt-tx.sh
+
+tail -f /dev/null
