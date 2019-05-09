@@ -21,8 +21,8 @@ EXPOSE 8432
 
 WORKDIR /opt/btc-usdt/bitcore
 RUN bitcore install insight-api insight-ui
-RUN cp ./bitcore/node_modules/bitcore-node/bin/bitcoin-0.12.1/bin/bitcoin-cli /usr/local/bin/
-RUN cp ./bitcore/node_modules/bitcore-node/bin/bitcoin-0.12.1/bin/bitcoind /usr/local/bin/
+RUN cp ./node_modules/bitcore-node/bin/bitcoin-0.12.1/bin/bitcoin-cli /usr/local/bin/
+RUN cp ./node_modules/bitcore-node/bin/bitcoin-0.12.1/bin/bitcoind /usr/local/bin/
 
 WORKDIR /opt/btc-usdt
 RUN wget -L https://github.com/OmniLayer/omnicore/releases/download/v0.3.1/omnicore-0.3.1-x86_64-linux-gnu.tar.gz \
