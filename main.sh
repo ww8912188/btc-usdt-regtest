@@ -2,9 +2,9 @@
 cd /opt/btc-usdt
 cp btc.conf /data/bitcoin/regtest_btc_insight_api/bitcoin.conf
 
-./start-btc.sh
-./start-usdt.sh
-./start-insight-api.sh
+pm2 start ./start-btc.sh --name=btc-rpc
+pm2 start ./start-usdt.sh --name=usdt-rpc
+pm2 start ./start-insight-api.sh --name=btc-insight-api
 
 # wallet import and send btc
 sleep 10
