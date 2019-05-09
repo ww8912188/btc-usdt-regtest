@@ -20,7 +20,7 @@ EXPOSE 8431
 EXPOSE 8432
 
 WORKDIR /opt/btc-usdt
-RUN wget curl -L https://github.com/OmniLayer/omnicore/releases/download/v0.3.1/omnicore-0.3.1-x86_64-linux-gnu.tar.gz \
+RUN wget -L https://github.com/OmniLayer/omnicore/releases/download/v0.3.1/omnicore-0.3.1-x86_64-linux-gnu.tar.gz \
     && tar -xzvf omnicore-0.3.1-x86_64-linux-gnu.tar.gz \
     && cp ./omnicore-0.3.1/bin/omnicore-cli /usr/local/bin/ \
     && cp ./omnicore-0.3.1/bin/omnicored /usr/local/bin/ \
