@@ -34,7 +34,7 @@ echo "Unspent: "$pre_transaction
 echo "Receiver: "$receiver_address
 
 # will transfer new coin amount, set it by yourself
-amount=3
+amount=0.1
 
 # generate omni layer payload for new coin tx
 payload=`omnicore-cli $AUTH omni_createpayload_simplesend $property_id $amount`
